@@ -1,0 +1,81 @@
+# Restaurants YAML File
+
+restaurants:
+  - name: Gourmet Bistro Eats
+    address: 123 Pasta Lane, Food City
+    phone: 555-987-6543
+    website_address: www.gourmetbistroeats.com
+    email_address: l.mandisa3@gmail.com
+    images: images/bistro_eats.jpg
+    categories:
+      - name: "Patas"
+        items:
+          - name: "Bruschetta"
+            description: "Grilled bread topped with fresh tomatoes, garlic, and basil."
+            price: 89.00
+          - name: "Stuffed Mushrooms"
+            description: "Mushrooms filled with a savory cheese and herb stuffing."
+            price: 100.00
+          - name: "Bacon rings"
+            description: "Bacon filled with onion rings, string cheese, torn, over pineapple."
+            price: 100.00
+      - name: "Main Courses"
+        items:
+          - name: "Grilled Salmon"
+            description: "Fresh salmon fillet grilled to perfection, served with a side of asparagus."
+            price: 225.00
+          - name: "Ribeye Steak"
+            description: "Juicy ribeye steak cooked to your liking, served with mashed potatoes and gravy."
+            price: 330.00
+          - name: "Vegetable Stir Fry"
+            description: "A mix of fresh vegetables stir-fried with tofu in a savory sauce."
+            price: 180.00
+      - name: "Desserts"
+        items:
+          - name: "Cheesecake"
+            description: "Classic New York-style cheesecake with a graham cracker crust."
+            price: 77.00
+          - name: "Chocolate Lava Cake"
+            description: "Rich chocolate cake with a molten chocolate center."
+            price: 58.00
+          - name: "Malva Pudding"
+            description: "Contains apricot jam and has a spongy caramelised texture and served hot with custard."
+            price: 58.00
+
+  - name: Italian Delight
+    address: 456 Pizza Street, Food City
+    phone: 555-654-3210
+    website_address: www.italiandelight.com
+    email_address: info@italiandelight.com
+    images: images/italian_delight.jpg
+    categories:
+      - name: "Appetizers"
+        items:
+          - name: "Garlic Bread"
+            description: "Toasted bread with garlic and herbs."
+            price: 50.00
+          - name: "Caprese Salad"
+            description: "Fresh tomatoes, mozzarella, and basil with balsamic glaze."
+            price: 75.00
+      - name: "Main Courses"
+        items:
+          - name: "Margherita Pizza"
+            description: "Classic pizza with tomato, mozzarella, and basil."
+            price: 150.00
+          - name: "Lasagna"
+            description: "Layered pasta with meat, cheese, and tomato sauce."
+            price: 200.00
+          - name: "Spaghetti Carbonara"
+            description: "Spaghetti with pancetta, egg, and Parmesan cheese."
+            price: 180.00
+      - name: "Desserts"
+        items:
+          - name: "Tiramisu"
+            description: "Classic Italian dessert with coffee-soaked ladyfingers and mascarpone."
+            price: 90.00
+          - name: "Panna Cotta"
+            description: "Creamy dessert with a hint of vanilla."
+            price: 85.00
+          - name: "Gelato"
+            description: "Assorted flavors of Italian ice cream."
+            price: 70.00

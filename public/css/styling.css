@@ -1,0 +1,128 @@
+/* Ensure the body takes up the full height */
+body, html {
+    height: 100%;
+    margin: 0;
+    background-color: #D68C45;
+}
+/* Container to hold both the restaurants and the menu */
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+/* Styling for the restaurants section */
+.restaurants {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Styling for each card */
+.card-restaurants {
+    flex: 1 1 calc(33% - 20px); /* 3 cards per row, adjust as needed */
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+    padding: 15px;
+    margin: 0%;
+}
+
+.card-restaurants{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    margin: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+   
+}
+h3{
+    text-align: center;
+}
+
+/* Styling for the restaurant menu section */
+.restaurant-menu {
+    margin-bottom: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* General styling for content and details */
+.card-restaurants .content img, .card-menu .content img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.card-restaurants .content .details, .card-menu .content .details {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card-restaurants .title, .card-menu .title {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.card-restaurants .action, .card-menu .action {
+    margin-top: auto;
+    text-align: center;
+    background: #007bff;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.card-restaurants .action:hover, .card-menu .action:hover {
+    background: #0056b3;
+}
+.header {
+    padding: 40px;
+    text-align: center;
+    background: #1abc9c;
+    color: white;
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  .footer{
+    padding: 40px;
+    text-align: center;
+    background: #4C956C;
+    color: white;
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+
+  @media (max-width: 768px) {
+    .card-restaurants {
+        flex: 1 1 calc(100% - 20px); /* 1 card per row */
+    }
+
+    .category {
+        flex: 1 1 calc(100% - 20px); /* 1 category per row */
+    }
+
+    .card-menu {
+        flex: 1 1 calc(100% - 20px); /* 1 item per row */
+    }
+
+    .restaurant-menu {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+}
