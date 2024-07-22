@@ -3,6 +3,7 @@
 ## Appetizers
 - **Garlic Bread**: Toasted bread with garlic and herbs. (50.00)
 - **Caprese Salad**: Fresh tomatoes, mozzarella, and basil with balsamic glaze. (75.00)
+- **Green Salad** :Fresh tomatoes, olives, and salad dressing  with balsamic glaze.(75.00)  
 
 ## Main Courses
 - **Margherita Pizza**: Classic pizza with tomato, mozzarella, and basil. (150.00)

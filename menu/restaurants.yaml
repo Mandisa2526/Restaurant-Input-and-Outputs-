@@ -57,6 +57,9 @@ restaurants:
           - name: "Caprese Salad"
             description: "Fresh tomatoes, mozzarella, and basil with balsamic glaze."
             price: 75.00
+          - name: "Green Salad"
+            description: "Fresh tomatoes, olives, and salad dressing  with balsamic glaze."
+            price: 75.00  
       - name: "Main Courses"
         items:
           - name: "Margherita Pizza"

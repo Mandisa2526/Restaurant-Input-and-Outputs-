@@ -8,50 +8,50 @@
 </head>
 <body>
     <div class="header"><h1>Restaurants</h1></div>
-    <div class="restaurants"></div>
-    <div class="restaurant-menu"></div>
-    {{!-- <div class="main-container">
-        <div class="restaurants"></div>
-        <div class="restaurant-menu"></div>
-    </div> --}}
+<!-- restaurants.handlebars -->
+<div class="restaurants">
+  {{#each restaurants}}
+    <div class="card-restaurants">
+      <div class="content">
+        <h3><span class="title">{{this.name}}</span></h3>
+        <a href="{{this.website_address}}">
+          <img src="{{this.images}}" alt="{{this.name}}" width="80%" height="40%">
+        </a>
+        <p class="email details">{{this.email_address}}</p>
+        <p class="phone-number details">{{this.phone}}</p>
+        <p class="web details">{{this.address}}</p>
+        <p class="web details">{{this.website_address}}</p>
+        <a class="action" href="#restaurant={{this.name}}">
+          Restaurant Menu <span aria-hidden="true"> → </span>
+        </a>
+      </div>
+    </div>
+  {{/each}}
+</div>
 
-    <!-- Handlebars Templates -->
-    <script type="text/x-template" id="restaurants-template">
-        {{#each this}}
-        <div class="card-restaurants">
+<!-- restaurant-menu.handlebars -->
+<div class="restaurant-menu">
+  {{#each categories}}
+    <div class="category">
+      <h3 class="title">{{this.name}}</h3>
+      <div class="category-items">
+        {{#each this.items}}
+          <div class="card-menu">
             <div class="content">
-                <h3><span class="title">{{name}}</span></h3>
-                <a href="{{website_address}}">
-                    <img src="{{images}}" alt="{{name}}" width="100%">
-                </a>
-                <p class="email details">{{email_address}}</p>
-                <p class="phone-number details">{{phone}}</p>
-                <a class="action" href="#restaurant={{name}}">
-                    Restaurant Menu <span aria-hidden="true"> → </span>
-                </a>
+              <div class="details">
+                <p><strong>{{this.name}}</strong></p>
+                <p><strong>R</strong> {{this.price}}.00</p>
+                <p>{{this.description}}</p>
+              </div>
             </div>
-        </div>
+          </div>
         {{/each}}
-    </script>
+      </div>
+    </div>
+  {{/each}}
+</div>
 
-    <script type="text/x-template" id="restaurant-menu-template">
-        {{#each categories}}
-        <h3 class="title">{{name}}</h3>
-        <div class="restaurants">
-            {{#each items}}
-            <div class="card-menu">
-                <div class="content">
-                    <div class="details">
-                        <p><strong>{{name}}</strong></p>
-                        <p><strong>R</strong> {{price}}.00</p>
-                        <p>{{description}}</p>
-                    </div>
-                </div>
-            </div>
-            {{/each}}
-        </div>
-        {{/each}}
-    </script>
+
 
      <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
      <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>

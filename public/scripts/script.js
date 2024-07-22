@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", async () => {
                 <div class="content">
                     <h3><span class="title">${restaurant.name}</span></h3>
                     <a href="${restaurant.website_address}">
-                        <img src="${restaurant.images}" alt="${restaurant.name}" width="40%" height="40%">
+                        <img src="${restaurant.images}" alt="${restaurant.name}" width="70%" height="50%">
                     </a>
                     <p class="email details">${restaurant.email_address}</p>
                     <p class="phone-number details">${restaurant.phone}</p>
@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     function createRestaurantMenuHTML(menu) {
         return menu.categories.map(category => `
             <h3 class="title">${category.name}</h3>
-            <div class="restaurants">
+            <div class="category-items">
                 ${category.items.map(item => `
                     <div class="card-menu">
                         <div class="content">
@@ -80,6 +80,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
             if (data) {
                 menuReference.innerHTML = createRestaurantMenuHTML(data);
+                menuReference.style.display = 'block';
             } else {
                 console.error("Invalid menu data received.");
                 menuReference.innerHTML = `No menu data available for ${restaurant}.`;
@@ -108,4 +109,5 @@ document.addEventListener("DOMContentLoaded", async () => {
     await findRestaurants();
     loadRestaurantMenu();
 });
+
 
